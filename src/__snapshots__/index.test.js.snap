@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ooth can register plugin 1`] = `
+Array [
+  Object {
+    "getProfile": [Function],
+    "getUniqueField": [Function],
+    "getUserByFields": [Function],
+    "getUserById": [Function],
+    "getUserByUniqueField": [Function],
+    "insertUser": [Function],
+    "name": "test",
+    "registerGetMethod": [Function],
+    "registerMethod": [Function],
+    "registerPassportConnectMethod": [Function],
+    "registerPassportMethod": [Function],
+    "registerProfileField": [Function],
+    "registerStrategyUniqueField": [Function],
+    "registerUniqueField": [Function],
+    "registerUserTransformer": [Function],
+    "requireLogged": [Function],
+    "requireNotLogged": [Function],
+    "requireNotRegistered": [Function],
+    "requireRegisteredWithThis": [Function],
+    "updateUser": [Function],
+  },
+]
+`;
+
+exports[`ooth connect method after login can connect another strategy 1`] = `
+Object {
+  "_id": "<obfuscated>",
+  "test": Object {
+    "foo": 1,
+  },
+  "test2": Object {},
+}
+`;
+
+exports[`ooth connect method after login can log in again 1`] = `
+Object {
+  "_id": "<obfuscated>",
+  "test": Object {
+    "foo": 2,
+  },
+}
+`;
+
+exports[`ooth connect method after login can log in with other strategy 1`] = `
+Object {
+  "_id": "<obfuscated>",
+  "test": Object {
+    "foo": 1,
+  },
+  "test2": Object {},
+}
+`;
+
+exports[`ooth connect method after login can log in with other strategy 2`] = `
+Object {
+  "_id": "<obfuscated>",
+  "test": Object {
+    "foo": 1,
+  },
+  "test2": Object {},
+}
+`;
+
+exports[`ooth connect method after login can log out 1`] = `
+Object {
+  "message": "Logged out",
+}
+`;
+
+exports[`ooth connect method can log in 1`] = `
+Object {
+  "user": Object {
+    "_id": "<obfuscated>",
+    "test": Object {
+      "foo": 1,
+    },
+  },
+}
+`;
+
+exports[`ooth connect method can register 1`] = `
+Object {
+  "_id": "<obfuscated>",
+  "test": Object {
+    "foo": 1,
+  },
+}
+`;
+
+exports[`ooth connect method plugin can add properties to user 1`] = `
+Object {
+  "user": Object {
+    "_id": "<obfuscated>",
+    "test": Object {
+      "testProp": "foo",
+    },
+  },
+}
+`;
+
+exports[`ooth main route has additional passport route for passport method 1`] = `
+Object {
+  "methods": Object {
+    "root": Array [
+      "status",
+      "logout",
+    ],
+    "test": Array [
+      "login",
+    ],
+  },
+}
+`;
+
+exports[`ooth main route has additional route for method 1`] = `
+Object {
+  "methods": Object {
+    "root": Array [
+      "status",
+      "logout",
+    ],
+    "test": Array [
+      "login",
+    ],
+  },
+}
+`;
+
+exports[`ooth main route has status 1`] = `
+Object {
+  "methods": Object {
+    "root": Array [
+      "status",
+      "logout",
+    ],
+  },
+}
+`;
+
+exports[`ooth methods handle async errors 1`] = `
+Object {
+  "message": "Error message.",
+  "status": "error",
+}
+`;
+
+exports[`ooth methods handle errors 1`] = `
+Object {
+  "message": "Error message.",
+  "status": "error",
+}
+`;
+
+exports[`ooth methods handle method 1`] = `
+Object {
+  "message": "hi",
+}
+`;
